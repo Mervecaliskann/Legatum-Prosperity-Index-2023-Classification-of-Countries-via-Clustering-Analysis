@@ -45,9 +45,13 @@ Natural Environment: Doğal Çevre
 
 Proje, aşağıdaki adımları izleyerek gerçekleştirilmiştir:
 
-### Veri Ön İşleme: Değişkenler arasındaki ölçek farklılıklarını gidermek için veriler Z-skor normalizasyonu (scale()) ile standartlaştırılmıştır.
+### Veri Ön İşleme: 
 
-### Korelasyon Analizi: Değişkenler arasındaki yüksek doğrusal ilişkiler (örn. Yaşam Koşulları ve Eğitim arasında r≈0,94) tespit edilmiş, bu durum boyut indirgeme ihtiyacını ortaya koymuştur.
+Değişkenler arasındaki ölçek farklılıklarını gidermek için veriler Z-skor normalizasyonu (scale()) ile standartlaştırılmıştır.
+
+### Korelasyon Analizi: 
+
+Değişkenler arasındaki yüksek doğrusal ilişkiler (örn. Yaşam Koşulları ve Eğitim arasında r≈0,94) tespit edilmiş, bu durum boyut indirgeme ihtiyacını ortaya koymuştur.
 
 ### Boyut İndirgeme (Temel Bileşen Analizi - PCA):
 
@@ -67,29 +71,42 @@ Proje, aşağıdaki adımları izleyerek gerçekleştirilmiştir:
 * Model Tabanlı Kümeleme
 * Yoğunluk Tabanlı Kümeleme (DBSCAN)
 
-### Optimal Modelin Seçimi: Yapılan karşılaştırmalar sonucunda, istatistiksel geçerliliği en yüksek ve en iyi yorumlanabilir sonuçları üreten modelin PCA + 3-Kümeli K-Means olduğuna karar verilmiştir.
+### Optimal Modelin Seçimi: 
+
+Yapılan karşılaştırmalar sonucunda, istatistiksel geçerliliği en yüksek ve en iyi yorumlanabilir sonuçları üreten modelin PCA + 3-Kümeli K-Means olduğuna karar verilmiştir.
 
 ## Temel Bulgular ve Sonuçlar
 
 Seçilen nihai model, ülkeleri refah profillerine göre üç anlamlı ve birbirinden net bir şekilde ayrışan kümeye ayırmıştır.
 
 ### Küme 2: Yüksek Refah ve Dengeli Yaşam Ülkeleri (49 Ülke)
+
 Temsilciler: İskandinav ülkeleri (Danimarka, Norveç, İsveç), İsviçre, Almanya, Kanada, Japonya, Avustralya.
+
 Profil: Tüm 12 refah göstergesinde en yüksek skorlara sahip, istikrarlı ve dengeli ülkelerdir. Güçlü ekonomilerinin yanı sıra yüksek bireysel özgürlükler, sağlam sosyal devlet yapıları ve kaliteli çevre sunarlar.
 
 ### Küme 3 : Orta ve Gelişmekte Olan Ülkeler (77 Ülke)
+
 Temsilciler: Türkiye, Çin, Rusya, Brezilya, Meksika, Hindistan, Endonezya ve Suudi Arabistan gibi Körfez ülkeleri.
+
 Profil: En kalabalık ve heterojen kümedir. Genellikle hızlı ekonomik büyüme ve sanayileşme yaşayan, ancak bu süreçte yönetim, bireysel özgürlükler ve çevresel konularda zorluklarla karşılaşan "yükselen güçleri" temsil eder. Türkiye de bu kümede yer almaktadır.
 
 ### Küme 1 : Düşük Refah ve Kırılgan Ülkeler (41 Ülke)
+
 Temsilciler: Somali, Çad, Afganistan, Yemen, Suriye ve Sahra Altı Afrika'daki birçok ülke.
+
 Profil: Yüksek yoksulluk, siyasi istikrarsızlık, zayıf yönetim ve temel hizmetlere sınırlı erişim gibi yapısal sorunlarla mücadele eden ülkelerdir. Tüm refah göstergelerinde en düşük puanlara sahiptirler.
 
-### Öne Çıkan Gözlem: Refah, Sadece Ekonomik Zenginlik Değildir
+### Öne Çıkan Gözlem:
+
+Refah, Sadece Ekonomik Zenginlik Değildir
+
 Bu analizin en çarpıcı bulgularından biri, refahın çok boyutlu yapısını ortaya koymasıdır. Örneğin:
 
 Yüksek gelirli petrol ülkeleri (Suudi Arabistan, BAE, Katar) ekonomik göstergelerde güçlü olmalarına rağmen bireysel özgürlükler ve yönetim kalitesi gibi alanlarda daha düşük puanlar alarak Orta Refah (Mavi Küme) grubunda yer almıştır.
+
 Yine yüksek gelirli olan İskandinav ülkeleri ise sadece ekonomide değil, sosyal, demokratik ve çevresel göstergelerde de dengeli ve çok yüksek bir performans sergileyerek Yüksek Refah (Yeşil Küme) grubunda ayrışmıştır.
+
 Bu durum, PCA ve kümeleme analizinin, ülkeleri yüzeysel benzerliklerine göre değil, derinlemesine refah yapılarına göre ne kadar başarılı bir şekilde gruplandırdığını kanıtlamaktadır.
 
 ### Nihai Modelin Seçim Gerekçeleri (PCA + 3-Kümeli K-Means)
