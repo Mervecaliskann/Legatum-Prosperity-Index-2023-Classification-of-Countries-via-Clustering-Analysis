@@ -1,0 +1,2 @@
+# Legatum-Refah-Endeksi-2023-lkelerin-K-meleme-Analizi-ile-S-n-fland-r-lmas-
+u proje, Legatum Prosperity Index 2023 verilerini kullanarak 167 ülkenin refah profillerine göre gruplandırılmasını amaçlamaktadır. Analizde, ülkeleri ekonomik kalite, yaşam koşulları, sağlık, eğitim ve yönetim gibi 12 temel refah göstergesi üzerinden kümeleme algoritmalarıyla segmentlere ayırmak için R programlama dili kullanılmıştır.
